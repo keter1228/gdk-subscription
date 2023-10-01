@@ -1,46 +1,59 @@
-[{
-  "id": "tv.danmaku.bili",
-  "name": "Bili",
-  "groups": [
-    {
-      "key": 1,
-      "name": "首页-推广广告",
-      "activityIds": ["tv.danmaku.bili.MainActivityV2"],
-      "rules": [
-        {
-          "matches": "[text='相似内容过多']",
-          "snapshotUrls": "https://gkd-kit.gitee.io/import/12776962",
-        },
-        {
-          "matches": "[id$='/more_icon']",
-          "snapshotUrls": [
-            "https://gkd-kit.gitee.io/import/12776961",
-          ],
-        },
-      ],
-    },
-  ],
-},
 {
-    "id": "com.taptap",
-  "name": "taptap",
-  "groups": [
-    {
-      "key": 1,
-      "name": "首页-推广广告",
-      "activityIds": ["com.taptap.other.basic.impl.TapMainActivity"],
-      "rules": [
+    "id": 0,
+    "name": "自用订阅",
+    "version": 1,
+    "author": "wrd",
+    "supportUri": "https://github.com/gkd-kit/subscription",
+    "apps": [
         {
-          "matches": "[text='重复推荐/推荐过']",
-          "snapshotUrls": "https://gkd-kit.gitee.io/import/12776985",
+            "id": "tv.danmaku.bili",
+            "name": "Bili",
+            "groups": [
+                {
+                    "key": 0,
+                    "name": "开屏广告",
+                    "activityIds": [
+                        "tv.danmaku.bili.MainActivityV2"
+                    ],
+                    "rules": [
+                        {
+                            "matches": "[text='相似内容过多']",
+                            "snapshotUrls": [
+                                "https://gkd-kit.gitee.io/import/12776962"
+                            ]
+                        },
+                        {
+                            "matches": "[id$='/more_icon']",
+                            "snapshotUrls": "https://gkd-kit.gitee.io/import/12776961"
+                        }
+                    ]
+                }
+            ]
         },
         {
-          "matches": "[id='com.taptap.app.game:id/iv_more']",
-          "snapshotUrls": [
-            "https://gkd-kit.gitee.io/import/12776984",
-          ],
-        },
-      ],
-    },
-  ],
-}]
+            "id": "com.taptap",
+            "name": "taptap",
+            "groups": [
+                {
+                    "key": 1,
+                    "name": "首页-推广广告",
+                    "activityIds": [
+                        "com.taptap.other.basic.impl.TapMainActivity"
+                    ],
+                    "rules": [
+                        {
+                            "matches": "[text='重复推荐/推荐过']",
+                            "snapshotUrls": "https://gkd-kit.gitee.io/import/12776985"
+                        },
+                        {
+                            "matches": "[id='com.taptap.app.game:id/iv_more']",
+                            "snapshotUrls": [
+                                "https://gkd-kit.gitee.io/import/12776984"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
