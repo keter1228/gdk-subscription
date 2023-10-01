@@ -3,7 +3,7 @@
     "name": "自用订阅",
     "version": 1,
     "author": "wrd",
-    "supportUri": "https://github.com/gkd-kit/subscription",
+    "supportUri": "https://keter1228.github.io/gdk-subscription/files/gdk.json",
     "apps": [
         {
             "id": "tv.danmaku.bili",
