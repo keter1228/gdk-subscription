@@ -10,21 +10,21 @@
             "name": "Bili",
             "groups": [
                 {
-                    "key": 0,
-                    "name": "开屏广告",
+                    "key": 1,
+                    "name": "首页-推广广告",
                     "activityIds": [
                         "tv.danmaku.bili.MainActivityV2"
                     ],
                     "rules": [
                         {
-                            "matches": "[text='相似内容过多']",
+                            "matches": "[id='tv.danmaku.bili:id/reason2'][text='视频不感兴趣']",
                             "snapshotUrls": [
-                                "https://gkd-kit.gitee.io/import/12776962"
+                                "https://gkd-kit.gitee.io/import/12777079"
                             ]
                         },
                         {
-                            "matches": "[id$='/more_icon']",
-                            "snapshotUrls": "https://gkd-kit.gitee.io/import/12776961"
+                            "matches": "[id='tv.danmaku.bili:id/more_icon']",
+                            "snapshotUrls": "https://gkd-kit.gitee.io/import/12777077"
                         }
                     ]
                 }
